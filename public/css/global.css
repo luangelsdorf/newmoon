@@ -8,12 +8,26 @@
 }
 
 /*Global Styles*/
+html, body {
+    height: 100%;
+}
+#__next {
+    height: 100%;
+    overflow: hidden;
+}
+
 html body {
     font-family: Montserrat, 'sans-serif';
     font-size: 14px;
     background-color: var(--dark-100);
     color: var(--light-0);
     padding: 50px;
+
+    background-image: url("/img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition: all 5s ease;
 }
 
 body a {
