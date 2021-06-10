@@ -1,7 +1,10 @@
 import React from 'react';
+import styles from './CountDown.module.css'
 
-export default function CountDown() {
-    return (
-        <span>asd</span>
-    )
+export default function CountDown(props) {
+  return (
+    <span className={styles.countdown}>
+      {props.children}
+    </span>
+  )
 }

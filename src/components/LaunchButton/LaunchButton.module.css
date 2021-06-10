@@ -1,0 +1,32 @@
+.launch {
+    color: var(--light-0);
+    border: 1px solid var(--violet);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 500;
+    padding: 15px 30px;
+    position: relative;
+    background: transparent;
+}
+
+.launch::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: linear-gradient(to right, #7c21f5 0%, #540ab4 100%);
+    transition: all 350ms ease;
+    opacity: 0;
+}
+
+.launch:hover::before {
+    opacity: 1;
+}
+
+.launch span {
+    position: relative;
+}

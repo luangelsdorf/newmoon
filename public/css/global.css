@@ -27,7 +27,7 @@ html body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    transition: all 5s ease;
+    /*transition: all 5s ease;*/
 }
 
 body a {
