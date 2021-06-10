@@ -7,12 +7,12 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid flex-column">
 
-          <div className="d-flex w-100 justify-content-between">
-            <div className="me-auto">
+          <div className="d-flex w-100 justify-content-between" id="links">
+            <div className="d-flex align-items-center">
               <InstagramLogo />
               <a href="#">Follow us on Instagram</a>
             </div>
-            <a className="ms-auto" href="#">Contact us</a>
+            <a href="#">Contact us</a>
           </div>
 
           <div className="d-flex w-100 justify-content-center">

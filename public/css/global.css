@@ -1,4 +1,4 @@
-html {
+:root {
     --violet: #7c21f5;
     --violet-shadow: #540ab4;
     --dark-100: #07090d;
@@ -7,6 +7,7 @@ html {
     --light-0: #ffffff;
 }
 
+/*Global Styles*/
 html body {
     font-family: Montserrat, 'sans-serif';
     font-size: 14px;
@@ -17,13 +18,44 @@ html body {
 
 body a {
     color: var(--light-0);
+    text-decoration: none;
+    transition: color 350ms ease;
+}
+body a:hover {
+    color: var(--light-0);
 }
 
-body a:hover {
+/*Follow on Instagram*/
+svg {
+    transition: color 350ms ease;
+}
+#links:first-child:hover svg {
     color: var(--violet);
 }
 
+/*NewMoon Logo*/
 nav img {
     height: 45px;
     margin-top: 50px;
+}
+
+/*Contact Us*/
+#links > a {
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-end;
+}
+#links > a::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    bottom: -10px;
+    background-color: var(--violet);
+
+    opacity: 0;
+    transition: all 350ms ease;
+}
+#links > a:hover::after {
+    opacity: 1;
 }
