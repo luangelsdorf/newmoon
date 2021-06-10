@@ -1,0 +1,29 @@
+html {
+    --violet: #7c21f5;
+    --violet-shadow: #540ab4;
+    --dark-100: #07090d;
+    --light-40: #c9d2e3;
+    --light-20: #ebeef5;
+    --light-0: #ffffff;
+}
+
+html body {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 14px;
+    background-color: var(--dark-100);
+    color: var(--light-0);
+    padding: 50px;
+}
+
+body a {
+    color: var(--light-0);
+}
+
+body a:hover {
+    color: var(--violet);
+}
+
+nav img {
+    height: 45px;
+    margin-top: 50px;
+}
