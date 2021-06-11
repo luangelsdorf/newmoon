@@ -30,7 +30,7 @@ html body {
     background-image: url("/img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     transition: all 5s ease;
 }
 
@@ -75,4 +75,12 @@ header img {
 }
 #links > div:nth-child(2) a:hover::after {
     opacity: 1;
+}
+
+/*Nave*/
+#nave {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: -1;
 }
