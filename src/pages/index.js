@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import Main from "../components/Main";
-import ComingSoonHeading from "../components/ComingSoonHeading";
+import MainSection from "../components/MainSection";
+import MainHeading from "../components/MainHeading";
 import CountDown from "../components/CountDown";
 import LaunchButton from "../components/LaunchButton";
+import GetInTouch from "../components/SecondHeading";
+import SecondHeading from "../components/SecondHeading";
 
 export default function Home() {
   return (
@@ -14,11 +16,16 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Main>
-        <ComingSoonHeading>COMING SOON</ComingSoonHeading>
+
+      {/*<MainSection>
+        <MainHeading>COMING SOON</MainHeading>
         <CountDown>Five, four, three, two, one, zero, ignition...</CountDown>
         <LaunchButton><span>LAUNCH!</span></LaunchButton>
-      </Main>
+      </MainSection>*/}
+
+      <MainSection>
+        <SecondHeading>GET IN TOUCH</SecondHeading>
+      </MainSection>
     </>
   )
 }
