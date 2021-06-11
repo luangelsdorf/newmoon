@@ -6,6 +6,7 @@ import CountDown from "../components/CountDown";
 import LaunchButton from "../components/LaunchButton";
 import GetInTouch from "../components/SecondHeading";
 import SecondHeading from "../components/SecondHeading";
+import Form from "../components/Form";
 
 export default function Home() {
   return (
@@ -23,8 +24,9 @@ export default function Home() {
         <LaunchButton><span>LAUNCH!</span></LaunchButton>
       </MainSection>*/}
 
-      <MainSection>
+      <MainSection id="asdasd">
         <SecondHeading>GET IN TOUCH</SecondHeading>
+        <Form />
       </MainSection>
     </>
   )

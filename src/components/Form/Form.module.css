@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    border-radius: 10px 0 0 0;
+    border: 3px solid var(--violet);
+    padding: 15px 25px;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.form input:focus {
+    background-color: transparent;
+}
+
+.form input::placeholder {
+    color: var(--light-0);
+}
+
+.form button {
+    padding: 15px 25px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--violet);
+    border: 2px solid var(--violet);
+    color: var(--light-0);
+}
+
+.message {
+    font-size: 14px;
+}
