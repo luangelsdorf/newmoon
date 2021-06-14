@@ -4,22 +4,22 @@ import InstagramLogo from "./InstagramLogo";
 export default function Header() {
   return (
     <header>
-      <div className="container-fluid flex-column">
+      <div className="container-fluid p-0 flex-column">
 
-        <div className="row w-100 justify-content-between" id="links">
+        <div className="row w-100 m-0 justify-content-between" id="links">
           <div className="col-2">
             <div className="d-flex align-items-center">
               <InstagramLogo />
-              <a href="#">Follow us on Instagram</a>
+              <a id="follow-us" href="#">Follow us on Instagram</a>
             </div>
           </div>
-          <div className="col-1">
+          <div className="col-4 col-lg-1 text-end">
             <a href="#">Contact us</a>
           </div>
         </div>
 
-        <div className="row w-100 justify-content-center">
-          <div className="col-2">
+        <div className="row w-100 m-0 justify-content-center">
+          <div className="col-8 col-md-2">
             <img src="/img/logo.svg" alt="NewMoon Logo"/>
           </div>
         </div>

@@ -11,10 +11,12 @@
 html, body {
     height: 100%;
 }
-/*#__next {
+#__next {
     height: 100%;
-    overflow: hidden;
-}*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .flex-center {
     display: flex;
@@ -30,8 +32,9 @@ html body {
     background-image: url("/img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    transition: all 5s ease;
+    background-position-y: bottom;
+    background-position-x: center;
+    transition: background-position 5s ease;
 }
 
 body a {
@@ -41,6 +44,10 @@ body a {
 }
 body a:hover {
     color: var(--light-0);
+}
+
+header {
+    width: 100%;
 }
 
 /*Follow on Instagram*/
@@ -80,7 +87,28 @@ header img {
 /*Nave*/
 #nave {
     position: absolute;
-    bottom: 0;
-    right: 50%;
+    bottom: 5%;
+    width: 5%;
     z-index: -1;
+}
+
+/*-=-=-=-=-=-=- Media Queries -=-=-=-=-=-=-*/
+
+@media (max-width: 768px) {
+    html body {
+        background-size: 1355px 1315px !important;
+    }
+
+    #nave {
+        bottom: 10%;
+        width: 20%;
+    }
+
+    #follow-us {
+        display: none;
+    }
+
+    header {
+        font-size: 12px !important;
+    }
 }

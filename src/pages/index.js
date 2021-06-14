@@ -4,7 +4,6 @@ import MainSection from "../components/MainSection";
 import MainHeading from "../components/MainHeading";
 import CountDown from "../components/CountDown";
 import LaunchButton from "../components/LaunchButton";
-import GetInTouch from "../components/SecondHeading";
 import SecondHeading from "../components/SecondHeading";
 import Form from "../components/Form";
 
@@ -18,7 +17,7 @@ export default function Home() {
 
       <Header />
 
-      <MainSection>
+      {/*<MainSection>
         <MainHeading>COMING SOON</MainHeading>
         <CountDown>Five, four, three, two, one, zero, ignition...</CountDown>
         <LaunchButton><span>LAUNCH!</span></LaunchButton>
@@ -27,9 +26,9 @@ export default function Home() {
       <MainSection form>
         <SecondHeading>GET IN TOUCH</SecondHeading>
         <Form />
-      </MainSection>
+      </MainSection>*/}
 
-      {/*<img src="/img/nave.png" alt="Nave" id="nave" />*/}
+      <img src="/img/nave.png" alt="Nave" id="nave" />
     </>
   )
 }
