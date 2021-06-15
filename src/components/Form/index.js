@@ -10,9 +10,7 @@ export default function Form() {
         <button className="">SEND</button>
       </form>
 
-      <p className={styles.message}>Please enter your email and
-        <br className="d-block d-md-none" />
-        we'll get back to you soon.
+      <p className={styles.message}>Please enter your email and <br className="d-block d-md-none" /> we'll get back to you soon.
       </p>
 
     </>

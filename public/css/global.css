@@ -27,9 +27,10 @@ html, body {
 html body {
     font-family: Montserrat, 'sans-serif';
     font-size: 14px;
+    margin: 20px;
     color: var(--light-0);
 
-    background-image: url("/img/fundo.png");
+    background-image: linear-gradient(to bottom, #07090d 0%, rgba(35, 46, 67, 0) 100%), url("/img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
@@ -115,11 +116,12 @@ header img {
     }
 }
 
+section > .row > div {
+    margin-top: -100px !important;
+}
 
 @media (max-width: 1200px) {
-    section > .row > div {
-        margin-bottom: 95px !important;
-    }
+
 }
 
 @media (max-width: 1600px) {

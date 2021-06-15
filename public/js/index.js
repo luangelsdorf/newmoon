@@ -29,6 +29,8 @@ export function launch() {
   firstAnimation.onfinish = () => {
     firstSection.style.display = 'none';
     secondSection.style.display = 'flex';
+    spaceshipAnimation();
+
     let secondAnimation = secondSection.animate(
       [
         {
@@ -46,4 +48,24 @@ export function launch() {
       }
     );
   }
+}
+
+function spaceshipAnimation() {
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth)
+
+  document.getElementById('nave').animate(
+    [
+      {
+
+      },
+      {
+
+      }
+    ],
+    {
+      duration: 2000,
+      easing: 'ease',
+    }
+  )
 }

@@ -19,7 +19,7 @@ export default function Home() {
 
       <MainSection>
         <MainHeading>COMING SOON</MainHeading>
-        <CountDown>Five, four, three, two, one, zero, ignition...</CountDown>
+        <CountDown>Five, four, three, two, <br className="d-block d-md-none" /> one, zero, ignition...</CountDown>
         <LaunchButton><span>LAUNCH!</span></LaunchButton>
       </MainSection>
 
