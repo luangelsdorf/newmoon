@@ -35,6 +35,7 @@ html body {
     background-position-y: bottom;
     background-position-x: center;
     transition: background-position 5s ease;
+    overflow: hidden;
 }
 
 body a {
