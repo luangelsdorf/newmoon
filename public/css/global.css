@@ -112,3 +112,16 @@ header img {
         font-size: 12px !important;
     }
 }
+
+
+@media (max-width: 1200px) {
+    section > .row > div {
+        margin-bottom: 95px !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    section > .row > div {
+        margin-bottom: 75px;
+    }
+}
