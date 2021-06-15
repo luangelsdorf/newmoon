@@ -11,14 +11,16 @@
     padding: 15px 25px;
     background-color: transparent;
     font-size: inherit;
+    color: var(--light-0);
 }
 
 .form input:focus {
     background-color: transparent;
+    color: var(--light-0);
 }
 
 .form input::placeholder {
-    color: var(--light-0);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .form button {
