@@ -43,9 +43,15 @@ body a {
     color: var(--light-0);
     text-decoration: none;
     transition: color 350ms ease;
+    position: relative;
+    z-index: 1;
 }
 body a:hover {
     color: var(--light-0);
+}
+
+a[role="button"] {
+    cursor: pointer;
 }
 
 header {

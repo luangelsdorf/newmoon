@@ -40,7 +40,7 @@ export function launch() {
     {
       duration: 5000,
       easing: 'ease',
-      delay: 500
+      delay: 800
     }
   );
 
