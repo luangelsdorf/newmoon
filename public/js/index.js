@@ -4,6 +4,8 @@ export function launch() {
 
   let sections = document.querySelectorAll('section');
   let [firstSection, secondSection] = sections;
+  let canvas = document.querySelector('canvas');
+  let nave = document.getElementById('nave');
 
   let firstAnimation = firstSection.animate(
     [
@@ -26,10 +28,26 @@ export function launch() {
     }
   );
 
+  let spaceshipAnimation = nave.animate(
+    [
+      {
+        transform: 'initial'
+      },
+      {
+        transform: 'rotate(45deg)'
+      }
+    ],
+    {
+      duration: 5000,
+      easing: 'ease',
+      delay: 500
+    }
+  );
+
   firstAnimation.onfinish = () => {
     firstSection.style.display = 'none';
     secondSection.style.display = 'flex';
-    spaceshipAnimation();
+    nave.style.transform = 'rotate(45deg)';
 
     let secondAnimation = secondSection.animate(
       [
@@ -47,25 +65,21 @@ export function launch() {
         easing: 'ease'
       }
     );
-  }
-}
 
-function spaceshipAnimation() {
-  const windowWidth = window.innerWidth;
-  console.log(windowWidth)
-
-  document.getElementById('nave').animate(
-    [
+    let starsAnimation = canvas.animate(
+      [
+        {
+          opacity: 0
+        },
+        {
+          opacity: 1
+        }
+      ],
       {
-
-      },
-      {
-
+        duration: 1500,
+        easing: 'ease'
       }
-    ],
-    {
-      duration: 2000,
-      easing: 'ease',
-    }
-  )
+    );
+    starsAnimation.onfinish = () => canvas.style.opacity = '1';
+  }
 }

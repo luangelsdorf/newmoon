@@ -3,6 +3,8 @@
     font-size: 14px;
     width: 50%;
     margin: 50px auto 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .form input {
