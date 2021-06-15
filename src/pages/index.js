@@ -17,16 +17,16 @@ export default function Home() {
 
       <Header />
 
-      <MainSection>
+      {/*<MainSection>
         <MainHeading>COMING SOON</MainHeading>
         <CountDown>Five, four, three, two, one, zero, ignition...</CountDown>
         <LaunchButton><span>LAUNCH!</span></LaunchButton>
-      </MainSection>
+      </MainSection>*/}
 
-      {/*<MainSection form>
+      <MainSection>
         <SecondHeading>GET IN TOUCH</SecondHeading>
         <Form />
-      </MainSection>*/}
+      </MainSection>
 
       <img src="/img/nave.png" alt="Nave" id="nave" />
     </>
