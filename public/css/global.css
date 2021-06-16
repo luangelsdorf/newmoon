@@ -139,6 +139,6 @@ section > .row > div {
 
 @media (max-width: 1600px) {
     section > .row > div {
-        margin-bottom: 75px
+        margin-bottom: 75px;
     }
 }
