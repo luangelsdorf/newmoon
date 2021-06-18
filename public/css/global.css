@@ -27,7 +27,7 @@ html, body {
 html body {
     font-family: Montserrat, 'sans-serif';
     font-size: 14px;
-    margin: 20px;
+    padding: 20px;
     color: var(--light-0);
 
     background-image: linear-gradient(to bottom, #07090d 0%, rgba(35, 46, 67, 0) 100%), url("/img/fundo.png");
