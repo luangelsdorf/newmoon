@@ -32,6 +32,6 @@ export default function (req, res) {
 
     res.send('success')
   } else {
-    res.status(405).send('405 - Method not Allowed.')
+    res.status(405).send('405 - Method not Allowed. ' + process.env.email)
   }
 }
