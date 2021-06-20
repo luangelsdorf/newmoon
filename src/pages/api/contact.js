@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 export default function (req, res) {
   if (req.method === 'POST') {
     let nodemailer = require('nodemailer')
