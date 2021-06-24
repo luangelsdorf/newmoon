@@ -22,16 +22,14 @@ export default function (req, res) {
               `
     }
 
-    transporter.sendMail(mailData, function (err, info) {
-      if(err)
-        console.log(err)
-      else
-        console.log(info);
-    })
-
-
-    res.send('success')
-  } else {
-    res.status(405).send('405 - Method not Allowed. ' + process.env.email)
+    transporter.sendMail(mailData, (err, data) => {
+      if (err) {
+        console.log(err);
+        res.send("error" + JSON.stringify(err));
+      } else {
+        console.log("mail send");
+        res.send("success");
+      }
+    });
   }
 }
