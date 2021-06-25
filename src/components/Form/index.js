@@ -14,7 +14,7 @@ export default function Form() {
       email,
     }
 
-    fetch('/api/contact', {
+    fetch('/api/contact-sendgrid', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
