@@ -62,7 +62,7 @@ header {
 svg {
     transition: color 350ms ease;
 }
-#links:first-child:hover svg {
+#links :first-child:hover svg {
     color: var(--violet);
 }
 
