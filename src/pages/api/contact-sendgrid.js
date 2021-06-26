@@ -23,6 +23,6 @@ export default function (req, res) {
         res.status(400).send('An error occurred while sending the e-mail')
       })
   } else {
-    res.status(405).send('405 - Method not Allowed.')
+    res.status(405).send('405 - Method not Allowed. ' + process.env.SENDGRID_TO_ADDRESS)
   }
 }

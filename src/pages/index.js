@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>NewMoon</title>
+        <meta name="description" content="NewMoon is a new brazilian web development organization"/>
       </Head>
 
       <Header />
