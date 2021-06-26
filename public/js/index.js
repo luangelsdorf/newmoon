@@ -61,7 +61,7 @@ export function launch() {
         }
       ],
       {
-        duration: 2500,
+        duration: 2250,
         easing: 'ease'
       }
     );
