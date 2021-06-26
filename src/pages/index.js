@@ -12,7 +12,6 @@ export default function Home() {
     <>
       <Head>
         <title>NewMoon</title>
-        <link rel="stylesheet" href="/css/global.css"/>
       </Head>
 
       <Header />
