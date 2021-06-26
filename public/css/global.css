@@ -100,6 +100,12 @@ header img {
     z-index: 1;
 }
 
+/*Form*/
+form button .spinner-border {
+    width: 18px !important;
+    height: 18px !important;
+}
+
 /*particles.js*/
 canvas {
     position: absolute;

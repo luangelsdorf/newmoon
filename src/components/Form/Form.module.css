@@ -31,6 +31,13 @@
     background-color: var(--violet);
     border: 2px solid var(--violet);
     color: var(--light-0);
+    transition: all 250ms ease;
+    white-space: nowrap;
+}
+
+.form button:disabled {
+    background-color: #8f46f0;
+    border-color: #8f46f0;
 }
 
 .message {
