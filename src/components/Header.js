@@ -11,7 +11,7 @@ export default function Header() {
           <div className="col-2">
             <div className="d-flex align-items-center">
               <InstagramLogo />
-              <a id="follow-us" href="https://www.instagram.com/newmoon.works">Follow us on Instagram</a>
+              <a id="follow-us" target="_blank" href="https://www.instagram.com/newmoon.works">Follow us on Instagram</a>
             </div>
           </div>
           <div className="col-4 col-lg-1 text-end">
